@@ -22,7 +22,7 @@ ydl_opts = {
             {'key': 'FFmpegMetadata'},
         ],
 }
-async def download(link):
+def download(link):
     with youtube_dl.YoutubeDL(ydl_opts) as ytdl:
         ytdl.download([link])
 
